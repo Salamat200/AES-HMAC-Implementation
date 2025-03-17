@@ -20,9 +20,7 @@ key = ECC.generate(curve='P-256')
 
 # Save public key in a file named public_key.pem (It creates the file)
 #"wt" means to save in text mode
-```with open("public_key.pem", "wt") as f:```
-#this converts the public key into PEM format
-    ```f.write(key.public_key().export_key(format="PEM"))``` 
+```with open("public_key.pem", "wt") as f: f.write(key.public_key().export_key(format="PEM"))``` 
 
 #To signify that the key pair has been generated and saved successfully
 print("Keys generated successfully.")```
