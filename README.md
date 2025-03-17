@@ -1,14 +1,14 @@
 # Installation
  - Pycryptodome is installed could be accessed:
-   Library
+   Library - setting> Python interpreter> search 'pycryptodome'
    Command - 'pip install pycryptodome'
 
 To Generate the keys and save in separate files
 
- #To import ECC from Crypto.PublicKey ( this allows us to generate and work with ECC keys)
-   '''from Crypto.PublicKey import ECC
+ To import ECC from Crypto.PublicKey (this allows us to generate and work with ECC keys)
+ ```from Crypto.PublicKey import ECC
 
-# Generate ECDSA key pair (This helps create a private key and a corresponding public key)
+ #Generate ECDSA key pair (This helps create a private key and a corresponding public key)
 key = ECC.generate(curve='P-256')
 
 # Save private key in a file named private_key.pem (It creates the file)
@@ -22,7 +22,7 @@ with open("public_key.pem", "wt") as f: #"wt" means to save in text mode
 #To signify that the key pair has been generated and saved successfully
 print("Keys generated successfully.")
 
-To Sign the Product
+# To Sign the Product
 
 # Required Modules are imported
 '''import base64
