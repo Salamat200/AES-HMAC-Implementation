@@ -27,7 +27,7 @@ with open("public_key.pem", "wt") as f:
 #To signify that the key pair has been generated and saved successfully
 print("Keys generated successfully.")
 
-# To Sign the Product
+To Sign the Product
 
 # Required Modules are imported
 import base64
@@ -48,6 +48,7 @@ with open("private_key.pem", "rt") as f:
     private_key = ECC.import_key(f.read())
 
 # Sign the hash
+
 signer = DSS.new(private_key, 'fips-186-3') 
 signature = signer.sign(hash_obj)
 
@@ -62,7 +63,7 @@ with open("signature.ecdsa", "wb") as f:
 # To confirm that the file has been signed and the signature has been saved
 print("Product signed successfully.")
 
-Verify the Signature
+Verify The Signature
 
 # Open public key file
 '''with open("public_key.pem", "rt") as f:
