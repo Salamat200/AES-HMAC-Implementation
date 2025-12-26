@@ -6,7 +6,7 @@ student_id = "11735527"  #ID
 key_hex = (student_id * 8)[:64]  # Repeat it 8 times
 key = bytes.fromhex(key_hex)  # Convert to bytes
 
-# Write the message to a file
+# Write the message to a file named 'message.txt'
 message = "Pay $1000 to Bob"
 with open("message.txt", "w") as msg_file:
     msg_file.write(message)
